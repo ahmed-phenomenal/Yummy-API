@@ -1,0 +1,121 @@
+body{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-color: #0D0D0D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*navbar*/
+.navbar , .always_open , .open_bar{
+    z-index: 999;
+}
+.always_open .image img{
+    width: 50px;
+    height: 60px;
+} 
+.always_open .links i{
+    font-size: 33px;
+}
+.always_open i:hover{
+    cursor: pointer;
+}
+.open_bar{
+    background-color: #0D0D0D;
+}
+.open_bar .links a{
+    text-decoration: none;
+    color: white;
+}
+.open_bar .copyright i:hover{
+    cursor: pointer;
+}
+
+/*search bar*/
+.form-control{
+    background-color: #0D0D0D;
+    color: white;
+    display: inline;
+}
+.form-control:focus{
+    background-color: #0D0D0D;
+    color: white;
+}
+.form-control::placeholder {
+    color: #6C757D;
+}
+
+/*content*/
+.content .row img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.content .row img:hover{
+    cursor: pointer;
+}
+.content .row .col-md-3 .caption{
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+    width: 92%;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgb(255 255 255/ 90%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.content .row .col-md-3:hover .caption{
+    height: 300px;
+    cursor: pointer;
+}
+.content .row .caption h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/*description*/
+.description .row img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.description .row h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.description .row h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+.description .row .word{
+    color: #842029; 
+    background-color: #F8D7DA; 
+    width: fit-content; 
+    border-radius: 3px;
+    height: fit-content;
+}
+.description .row .buttons .btnsource , .description .row .buttons .btnyoutube{
+    padding:7px 10px;
+    border-radius:5px;
+}
+.description .row .spans span{
+    background-color: #CFF4FC;
+    width: fit-content;
+    color: #055160;
+    padding: 5px 5px;
+    border-radius:5px;
+}

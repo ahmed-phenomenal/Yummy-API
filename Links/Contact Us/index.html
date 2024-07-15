@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Yummy</title>
+    <!--icon page-->
+    <link rel="icon" href="./logo.png">
+
+    <!--Css Files-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel='stylesheet' href='CSS/style.css'>
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar d-flex">
+        <div class="always_open text-center h-100 bg-light position-fixed d-flex flex-column px-2 py-3 justify-content-between" style="top: 0; left: 0;">
+            <div class="image">
+                <img src="./logo.png">
+            </div>
+            <div class="links">
+                <i id="change_icon" class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            </div>
+            <div class="icons d-flex flex-column">
+                <i class="fa-solid fa-globe py-1"></i>
+                <i class="fa-solid fa-share-nodes py-1"></i>
+            </div>
+        </div>
+        <div class="open_bar h-100 position-fixed d-flex flex-column px-2 py-3 justify-content-between text-light" style="top: 0; left: -18%; width: 18%;">
+            <div id="link" class="links d-flex flex-column mx-3">
+                <a href="../Search/index.html" target="_self" class="py-2">Search</a>
+                <a href="../Categories/index.html" target="_self" class="py-2">Categories</a>
+                <a href="../Area/index.html" target="_self" class="py-2">Area</a>
+                <a href="../Ingredients/index.html" target="_self" class="py-2">Ingredients</a>
+                <a href="#" class="py-2">Contact Us</a>
+            </div>
+            <div class="copyright mx-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--form-->
+    <div class="form">
+        <div class="row py-5 g-4 " id="rowData">
+            <div class="contact h-100 d-flex justify-content-center align-items-center">
+                <div class="container w-75 text-center">
+                    <div class="row g-4 my-5">
+                        <div class="col-md-6">
+                            <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+                            <div id="nameAlert" class="alert alert-danger w-75 mt-2 d-none">
+                                Special characters and numbers not allowed
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="emailInput" type="email" class="form-control " placeholder="Enter Your Email">
+                            <div id="emailAlert" class="alert alert-danger w-75 mt-2 d-none">
+                                Email not valid *exemple@yyy.zzz
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="phoneInput" type="text" class="form-control " placeholder="Enter Your Phone">
+                            <div id="phoneAlert" class="alert alert-danger w-75 mt-2 d-none">
+                                Enter valid Phone Number
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="ageInput" type="number" class="form-control " placeholder="Enter Your Age">
+                            <div id="ageAlert" class="alert alert-danger w-75 mt-2 d-none">
+                                Enter valid age
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="passwordInput" type="password" class="form-control " placeholder="Enter Your Password">
+                            <div id="passwordAlert" class="alert alert-danger w-75 mt-2 d-none">
+                                Enter valid password *Minimum eight characters, at least one letter and one number:*
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="repasswordInput" type="password" class="form-control " placeholder="Repassword">
+                            <div id="repasswordAlert" class="alert alert-danger w-75 mt-2 d-none">
+                                Enter valid repassword 
+                            </div>
+                        </div>
+                    </div>
+                    <button id="submitBtn" class="btn btn-outline-danger px-2 mt-3" disabled="true">Submit</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!--JS-->
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>

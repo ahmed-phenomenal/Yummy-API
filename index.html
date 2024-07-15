@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Yummy</title>
+    <!--icon page-->
+    <link rel="icon" href="./logo.png">
+
+    <!--Css Files-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel='stylesheet' href='CSS/style.css'>
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+<body>
+        <!--navbar-->
+        <div class="navbar d-flex">
+            <div class="always_open text-center h-100 bg-light position-fixed d-flex flex-column px-2 py-3 justify-content-between" style="top: 0; left: 0;">
+                <div class="image">
+                    <img src="./logo.png">
+                </div>
+                <div class="links">
+                    <i id="change_icon" class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+                </div>
+                <div class="icons d-flex flex-column">
+                    <i class="fa-solid fa-globe py-1"></i>
+                    <i class="fa-solid fa-share-nodes py-1"></i>
+                </div>
+            </div>
+            <div class="open_bar h-100 position-fixed d-flex flex-column px-2 py-3 justify-content-between text-light" style="top: 0; left: -18%; width: 18%;">
+                <div id="link" class="links d-flex flex-column mx-3">
+                    <a href="./Links/Search/index.html" target="_self" class="py-2">Search</a>
+                    <a href="./Links/Categories/index.html" target="_self" class="py-2">Categories</a>
+                    <a href="./Links/Area/index.html" target="_self" class="py-2">Area</a>
+                    <a href="./Links/Ingredients/index.html" target="_self" class="py-2">Ingredients</a>
+                    <a href="./Links/Contact Us/index.html" target="_self" class="py-2">Contact Us</a>
+                </div>
+                <div class="copyright mx-3">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <p>Copyright Â© 2019 All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--content-->
+        <div class="content m-5">
+            <div class="container">
+                <div class="row" id="card">
+
+                </div>
+            </div>
+        </div>
+
+        
+    <!--Description-->
+    <div class="description d-none text-light">
+        <div class="container">
+            <div class="row" id="demo">
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!--JS-->
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
